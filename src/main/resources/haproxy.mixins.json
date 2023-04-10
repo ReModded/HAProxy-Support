@@ -1,0 +1,13 @@
+{
+  "required": true,
+  "minVersion": "0.8",
+  "package": "net.remodded.haproxy.mixin",
+  "compatibilityLevel": "JAVA_8",
+  "mixins": [
+    "ConnectionAccessor",
+    "ProxyProtocolImplementation"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}
