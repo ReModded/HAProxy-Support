@@ -17,10 +17,10 @@ import java.util.Collection;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
-@Mod("haproxy-support")
+@Mod("haproxy_support")
 public class HAProxySupport {
 
-    public static final String MODID = "haproxy-support";
+    public static final String MODID = "haproxy_support";
     public static final Logger LOGGER = LogManager.getLogger();
 
     public static boolean enableProxyProtocol = false;

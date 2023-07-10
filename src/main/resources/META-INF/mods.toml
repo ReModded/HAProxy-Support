@@ -1,22 +1,22 @@
 modLoader = "javafml"
-loaderVersion = "[36,)"
+loaderVersion = "[40,)"
 license = "All rights reserved"
 
 [[mods]]
-modId = "haproxy-support"
+modId = "haproxy_support"
 version = "${version}"
 displayName = "HAProxy Support"
 
-[[dependencies.haproxy-support]]
+[[dependencies.haproxy_support]]
 modId = "forge"
 mandatory = true
-versionRange = "[36,)"
+versionRange = "[40,)"
 ordering = "NONE"
 side = "BOTH"
 
-[[dependencies.haproxy-support]]
+[[dependencies.haproxy_support]]
 modId = "minecraft"
 mandatory = true
-versionRange = "[1.16.5,1.17)"
+versionRange = "[1.18.2,1.19)"
 ordering = "NONE"
 side = "BOTH"

@@ -1,5 +1,5 @@
 plugins {
-    id 'dev.architectury.loom' version '0.9.0-SNAPSHOT'
+    id 'dev.architectury.loom' version '0.12.0-SNAPSHOT'
     id 'maven-publish'
 }
 
@@ -13,17 +13,19 @@ group = project.maven_group
 loom {
     silentMojangMappingsLicense()
 
-    mixinConfigs = [
-            "haproxy.mixins.json"
-    ]
+    forge {
+        mixinConfigs = [
+                "haproxy.mixins.json"
+        ]
 
-    dataGen {
-        mod project.mod_id
-    }
+        dataGen {
+            mod project.mod_id
+        }
 
-    launches {
-        data {
-            arg "--existing", file("src/main/resources").absolutePath
+        launches {
+            data {
+                arg "--existing", file("src/main/resources").absolutePath
+            }
         }
     }
 }
